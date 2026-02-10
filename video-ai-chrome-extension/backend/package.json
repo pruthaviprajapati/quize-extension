@@ -1,0 +1,24 @@
+{
+  "name": "video-ai-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Video AI Extension",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test:quiz": "node test-quiz-generation.js",
+    "test:models": "node test-models.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "express-validator": "^7.0.1",
+    "mongoose": "^8.0.3",
+    "uuid": "^9.0.1",
+    "youtube-transcript": "^1.2.1"
+  }
+}
